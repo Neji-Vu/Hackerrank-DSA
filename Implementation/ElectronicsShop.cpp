@@ -9,7 +9,7 @@ using namespace std;
 #define ll long long
 
 int main(int argc, char **argv) {
-	int b, n, m, max = 0;
+	int b, n, m, max = -1;
 
 	cin >> b >> n >> m;
 	int k[n], d[m];
@@ -25,10 +25,7 @@ int main(int argc, char **argv) {
 		}
 	}
 
-	if (max != 0)
-		cout << max;
-	else
-		cout << "-1";
+	cout << max;
 
 	return 0;
 }
